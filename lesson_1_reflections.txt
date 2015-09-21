@@ -1,0 +1,39 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+By helping pinpoint changes without doing a time-consuming, an error-prone manual comparison.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+By allowing you to rollback to a previous working version if a current version isn't working.
+By preserving and providing easy access to a useful code segment which had been deleted as apparently
+unnecessary, but which later proved to be useful after all.
+
+What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+The pros include being able to choose commit points that make logical sense to you.
+A disadvantage is having to discipline yourself to rigorously do logically sensible commits throughout a project.
+
+Why do you think some version control systems, like Git, allow saving multiple files 
+in one commit, while others, like Google Docs, treat each file separately?
+
+Because some version control systems, like those directed to code development, are adapted for use
+with coding projects which encompass miltiple files; whereas others, like Google Docs, are primarily
+intended for use with invidivual files.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Use git log to review the project's commit history and identify checkpoints of interest.
+Use git diff to compare changes between two commits.
+
+How might using version control make you more confident to make changes that could break something?
+
+Through realization that I can easily revert to a previous working version; and further through
+realization that I can compare working & non-working versions to try and located bugs.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+As an aid to working through the rest of this course; as an aid to working through Udacity's two
+web developer courses; and as an aid to real-life project development.  I may even use Git to 
+track versions of the CWTC Will Questionnaire.
+
