@@ -16,3 +16,38 @@ for future commits by adding them to the staging area.  As work
 proceeds, this decision can be revisted and, if necessary, files
 can be removed from or added to the staging area before running the
 git commit command.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By using "git diff" to compare files in the working directory with files in 
+the staging area; and by further using git diff commitID to compare files in 
+the staging area with the most recent commit.
+
+What are some situations when branches would be helpful in keeping 
+your history organized? How would branches help?
+
+One situation is where you have an idea for a new feature, but want to test it
+before deciding to include it.  A branch for that feature lets you do that
+while keeping the original code intact so you can fall back to it if the
+new feature doesn't work out for any reason.  Another situation is where you
+decide to deploy versions that work in different ways; each version can be
+developed on a separate branch.
+
+How do the diagrams help you visualize the branch structure?
+
+By letting you trace commit paths back to an earlier state along each branch
+and by letting you see commits that may not belong to any branch.
+
+What is the result of merging two branches together?
+Why do we represent it in the diagram the way we do?
+
+Merging two branches combines all of the commits (changes) from both branches 
+into a single branch.  The diagram represents this so you can understand
+the commit paths and visualize off-branch changes which aren't committed.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+The main "pro" is speed & accuracy in performing auto merges in comparison to
+the thought & analysis required to correctly configure a manual merge.  The
+main "con" is the need to do the thought & analysis if git perceives a conflict
+and requires the user to manually resolve the merge before doing the merge.
